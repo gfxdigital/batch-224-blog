@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<%= cl_image_tag @article.photo, height: 100, width: 100, crop: :fill, gravity: :face %>
+
+<%= image_tag @article.photo.url(:bright_face) %>
 
 <p>
   <strong>Title:</strong>
